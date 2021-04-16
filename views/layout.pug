@@ -1,6 +1,6 @@
 doctype html
 mixin item(title, url)
-  li
+  li(class='navigation-item')
     a(href=url class=path == url ? "active" : "")=title
 
 html
@@ -8,10 +8,11 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    ul    
-      +item("Strona Główna", "/") 
-      +item("Aktualności", "/news") 
-      +item("Quiz", "/quiz") 
-      +item("admin panel", "/admin") 
-
-    block content
+    .container
+      ul(class='navigation')   
+        +item("Strona Główna", "/") 
+        +item("Aktualności", "/news") 
+        +item("Quiz", "/quiz") 
+        +item("admin panel", "/admin") 
+      .hero
+        block content
