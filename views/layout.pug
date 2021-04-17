@@ -9,10 +9,11 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     .container
-      ul(class='navigation')   
-        +item("Strona Główna", "/") 
-        +item("Aktualności", "/news") 
-        +item("Quiz", "/quiz") 
-        +item("admin panel", "/admin") 
+      nav
+        ul(class='navigation')   
+          +item("Strona Główna", "/") 
+          +item("Aktualności", "/news") 
+          +item("Quiz", "/quiz") 
+          +item("admin panel", "/admin") 
       .hero
         block content
