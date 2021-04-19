@@ -1,7 +1,7 @@
 extends ../layout
 
 block content
-    h1= title
+    h1(class="hero_title")= title
 
     if errors !== undefined 
         each message in errors.errors
