@@ -14,11 +14,8 @@ router.all('*', (req, res, next) => {
 /* GET home page. */
 router.get('/', (req, res) => {
   const data = News.find({}, (err, data) => {
-    console.log(data)
     res.render('admin/index', { title: 'Admin', data });
   })
-
-
 });
 
 router.get('/news/add', (req, res) => {

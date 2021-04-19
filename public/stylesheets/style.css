@@ -34,7 +34,7 @@ a:hover{
   border-right: 3px solid #fff;
 }
 
-.navigation-item{
+li{
   list-style: none;
   margin: 0 16px;
   padding: 8px;
@@ -45,6 +45,23 @@ a:hover{
   flex: 1;
 }
 
-.hero_title{
+.hero{
   text-align: center;
+}
+
+article{
+  background-color: #bff;
+  border: 2px solid white;
+  margin: 16px;
+}
+
+table{
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px;
 }
