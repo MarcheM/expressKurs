@@ -3,10 +3,10 @@ const router = express.Router();
 const News = require("../models/news")
 
 /* GET home page. */
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
  
   const search = req.query.search || ""
-  const findNews = News
+  const findNews = await News
     .find({title: new RegExp(search.trim(), 'i')})
     .sort({ created: -1 });
 console.log(findNews)
